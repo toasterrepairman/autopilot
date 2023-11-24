@@ -1,6 +1,8 @@
+#[cfg(target_arch = "x86_64")]
 #[cfg(feature = "mkl")]
 extern crate intel_mkl_src;
 
+#[cfg(target_arch = "x86_64")]
 #[cfg(feature = "accelerate")]
 extern crate accelerate_src;
 
